@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vitrine — Designstudio aus Berlin</title>
-<meta name="description" content="Vitrine ist ein unabhängiges Designstudio. Wir gestalten Markenidentitäten, digitale Produkte und die ruhigen Details dazwischen.">
+<title>Vitrine — Webdesign-Studio aus Widnau</title>
+<meta name="description" content="Vitrine ist ein Webdesign-Studio aus Widnau (Schweiz). Wir gestalten Websites, Marken und digitale Produkte — klar, schnell, massgeschneidert.">
 
-<meta property="og:title" content="Vitrine — Designstudio aus Berlin">
-<meta property="og:description" content="Marken- und Produktdesign, das bleibt.">
+<meta property="og:title" content="Vitrine — Webdesign-Studio aus Widnau">
+<meta property="og:description" content="Websites, Marken und digitale Produkte — klar, schnell, massgeschneidert.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0a0a0a">
 
@@ -28,44 +28,34 @@
       <span class="brand__name">Vitrine</span>
     </a>
     <ul class="nav__links">
+      <li><a href="#leistungen">Leistungen</a></li>
       <li><a href="#work">Arbeiten</a></li>
-      <li><a href="#approach">Ansatz</a></li>
       <li><a href="#studio">Studio</a></li>
     </ul>
     <a class="nav__cta" href="#contact">Projekt anfragen</a>
   </div>
 </nav>
 
-<!-- ============ Hero ============ -->
+<!-- ============ Hero: 3D-Objekt + Riesen-Typo ============ -->
 <header class="hero" id="top">
-  <div class="hero__media" aria-hidden="true">
-    <video class="hero__video" src="assets/hero.mp4" poster="assets/hero-poster.webp"
-           autoplay muted loop playsinline preload="auto" tabindex="-1"></video>
-    <div class="hero__scrim"></div>
-    <div class="hero__grain"></div>
-  </div>
+  <span class="hero__word" aria-hidden="true" data-hero-word>VITRINE</span>
 
   <div class="hero__inner">
-    <span class="pill">Designstudio<span class="pill__dot"></span>Berlin</span>
+    <span class="pill">Webdesign-Studio<span class="pill__dot"></span>Widnau · Schweiz</span>
 
-    <h1 class="hero__head">
-      <span class="l1">Mehr Klarheit.</span>
-      <span class="l2">Mehr Wirkung.</span>
-      <span class="l3">Weniger Lärm.</span>
-    </h1>
-
-    <p class="hero__sub">
-      Wir gestalten Markenidentitäten und digitale Produkte für Unternehmen,
-      die auffallen wollen, ohne zu schreien.
-    </p>
-
-    <div class="hero__actions">
-      <a class="btn btn--lime" href="#contact">Projekt anfragen <span aria-hidden="true">→</span></a>
-      <a class="btn btn--text" href="#work">Arbeiten ansehen <span aria-hidden="true">↓</span></a>
+    <div class="hero__stage" data-stage>
+      <div class="hero__tilt" data-tilt>
+        <video class="hero__video" src="assets/hero-object.mp4" poster="assets/hero-object-poster.webp"
+               autoplay muted loop playsinline preload="auto" tabindex="-1" aria-hidden="true"></video>
+      </div>
     </div>
+
+    <p class="hero__tag">Websites, die verkaufen.<br>Gestaltet und gebaut wie ein Produkt.</p>
+
+    <a class="btn btn--lime" href="#leistungen">Jetzt entdecken <span aria-hidden="true">↓</span></a>
   </div>
 
-  <a class="scroll-cue" href="#studio" aria-label="Weiterscrollen">
+  <a class="scroll-cue" href="#leistungen" aria-label="Weiterscrollen">
     <span>Scrollen</span>
     <span class="scroll-cue__line"></span>
   </a>
@@ -73,109 +63,108 @@
 
 <main id="main">
 
-  <!-- ============ Studio-Intro ============ -->
-  <section class="lead" id="studio">
-    <div class="wrap lead__inner" data-reveal>
-      <p class="eyebrow"><span class="eyebrow__idx">01</span> Studio</p>
-      <h1 class="lead__head">
-        Vitrine ist ein unabhängiges Designstudio für Unternehmen,
-        die lieber überzeugen als überreden.
-      </h1>
-      <p class="lead__body">
-        Wir entwerfen Markenidentitäten, digitale Produkte und die stillen Details
-        dazwischen. In kleinen Teams, nah an den Menschen, die eine Idee tragen —
-        ohne Umwege, ohne Effekthascherei, mit dem Anspruch, dass jedes Detail
-        einen Grund hat.
-      </p>
-      <ul class="facts" aria-label="Studio in Zahlen">
-        <li><span class="facts__k">Gegründet</span><span class="facts__v">2019</span></li>
-        <li><span class="facts__k">Sitz</span><span class="facts__v">Berlin</span></li>
-        <li><span class="facts__k">Team</span><span class="facts__v">Sechs Köpfe</span></li>
-        <li><span class="facts__k">Disziplinen</span><span class="facts__v">Marke · Produkt · Code</span></li>
-      </ul>
-    </div>
-  </section>
+  <!-- ============ Leistungen: farbige Sticky-Panels ============ -->
+  <div class="panels" id="leistungen">
 
-  <hr class="rule">
-
-  <!-- ============ Ansatz ============ -->
-  <section class="approach" id="approach">
-    <div class="wrap">
-      <div class="sec-head" data-reveal>
-        <p class="eyebrow"><span class="eyebrow__idx">02</span> Ansatz</p>
-        <h2>Drei Überzeugungen, die jede Arbeit tragen.</h2>
+    <section class="panel panel--design" aria-labelledby="p-design">
+      <span class="panel__word" aria-hidden="true" data-word>DESIGN</span>
+      <div class="wrap panel__grid">
+        <ul class="panel__list">
+          <li>Massgeschneidertes Layout</li>
+          <li>Responsive bis ins Detail</li>
+          <li>Schnell &amp; SEO-bereit</li>
+        </ul>
+        <figure class="panel__figure" data-float>
+          <img src="assets/work-interface.webp" alt="Dunkles Interface-Design mit gläsernen Panels" loading="lazy">
+        </figure>
+        <div class="panel__side">
+          <p class="panel__kicker">Klar &amp; präzise</p>
+          <h2 class="panel__title" id="p-design">Webdesign</h2>
+          <a class="btn btn--white" href="#contact">Jetzt entdecken <span aria-hidden="true">→</span></a>
+        </div>
       </div>
-      <ol class="principles">
-        <li class="principle" data-reveal>
-          <span class="principle__num">01</span>
-          <div class="principle__body">
-            <h3>Reduktion</h3>
-            <p>Wir lassen weg, bis nur das Notwendige bleibt. Was übrig ist, muss tragen —
-               und tut es dann auch.</p>
-          </div>
-        </li>
-        <li class="principle" data-reveal>
-          <span class="principle__num">02</span>
-          <div class="principle__body">
-            <h3>Handwerk</h3>
-            <p>Typografie, Raster, Bewegung, Code. Die Qualität liegt in den Millimetern,
-               die niemand benennt und trotzdem jeder spürt.</p>
-          </div>
-        </li>
-        <li class="principle" data-reveal>
-          <span class="principle__num">03</span>
-          <div class="principle__body">
-            <h3>Beständigkeit</h3>
-            <p>Wir bauen Systeme, keine Momentaufnahmen. Gute Gestaltung lässt sich
-               pflegen und wächst mit ihrer Aufgabe.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
+    </section>
 
-  <hr class="rule">
+    <section class="panel panel--brand" aria-labelledby="p-brand">
+      <span class="panel__word" aria-hidden="true" data-word>MARKE</span>
+      <div class="wrap panel__grid">
+        <ul class="panel__list">
+          <li>Logo &amp; Erscheinungsbild</li>
+          <li>Farbwelt &amp; Typografie</li>
+          <li>Konsistent auf allen Kanälen</li>
+        </ul>
+        <figure class="panel__figure" data-float>
+          <img src="assets/work-brand.webp" alt="Geprägte Visitenkarte auf mattem Schwarz" loading="lazy">
+        </figure>
+        <div class="panel__side">
+          <p class="panel__kicker">Unverwechselbar</p>
+          <h2 class="panel__title" id="p-brand">Branding</h2>
+          <a class="btn btn--dark" href="#contact">Jetzt entdecken <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel--code" aria-labelledby="p-code">
+      <span class="panel__word" aria-hidden="true" data-word>CODE</span>
+      <div class="wrap panel__grid">
+        <ul class="panel__list">
+          <li>Sauberer, schneller Code</li>
+          <li>CMS oder statisch — passend</li>
+          <li>Wartung &amp; Weiterentwicklung</li>
+        </ul>
+        <figure class="panel__figure" data-float>
+          <img src="assets/work-product.webp" alt="Mattes Aluminiumobjekt im Studiolicht" loading="lazy">
+        </figure>
+        <div class="panel__side">
+          <p class="panel__kicker">Solide gebaut</p>
+          <h2 class="panel__title" id="p-code">Entwicklung</h2>
+          <a class="btn btn--white" href="#contact">Jetzt entdecken <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </div>
 
   <!-- ============ Arbeiten ============ -->
   <section class="work" id="work">
     <div class="wrap">
       <div class="sec-head" data-reveal>
-        <p class="eyebrow"><span class="eyebrow__idx">03</span> Arbeiten</p>
+        <p class="eyebrow"><span class="eyebrow__idx">01</span> Arbeiten</p>
         <h2>Ausgewählte Projekte.</h2>
-        <p class="sec-head__note">Ein Ausschnitt aus Marken, Produkten und Oberflächen der letzten Jahre.</p>
+        <p class="sec-head__note">Ein Ausschnitt aus Marken, Produkten und Oberflächen.</p>
       </div>
 
       <div class="work__grid">
         <a class="project" href="#contact" data-reveal>
           <div class="project__frame">
-            <img src="assets/work-brand.webp" alt="Markenidentität für das Architekturbüro Auren — geprägte Visitenkarte auf mattem Schwarz" loading="lazy">
+            <img src="assets/work-brand.webp" alt="Markenidentität Auren — geprägte Visitenkarte auf mattem Schwarz" loading="lazy">
           </div>
           <div class="project__meta">
             <span class="project__name">Auren</span>
             <span class="project__cat">Markenidentität · Architektur</span>
-            <span class="project__year">2025</span>
+            <span class="project__year">2026</span>
           </div>
         </a>
 
         <a class="project" href="#contact" data-reveal>
           <div class="project__frame">
-            <img src="assets/work-product.webp" alt="Produktdesign für Voss &amp; Halm — mattes Aluminiumobjekt im Studiolicht" loading="lazy">
+            <img src="assets/work-product.webp" alt="Produktdesign Voss &amp; Halm — mattes Aluminiumobjekt" loading="lazy">
           </div>
           <div class="project__meta">
             <span class="project__name">Voss &amp; Halm</span>
             <span class="project__cat">Produktdesign · Consumer Electronics</span>
-            <span class="project__year">2025</span>
+            <span class="project__year">2026</span>
           </div>
         </a>
 
         <a class="project" href="#contact" data-reveal>
           <div class="project__frame">
-            <img src="assets/work-editorial.webp" alt="Editorial Design für das Kulturmagazin Kontur — aufgefächerte Druckseiten" loading="lazy">
+            <img src="assets/work-editorial.webp" alt="Editorial Design Kontur — aufgefächerte Druckseiten" loading="lazy">
           </div>
           <div class="project__meta">
             <span class="project__name">Kontur</span>
             <span class="project__cat">Editorial Design · Kulturmagazin</span>
-            <span class="project__year">2024</span>
+            <span class="project__year">2026</span>
           </div>
         </a>
 
@@ -186,7 +175,7 @@
           <div class="project__meta">
             <span class="project__name">Meridian</span>
             <span class="project__cat">Digitales Produkt · Finanzplattform</span>
-            <span class="project__year">2024</span>
+            <span class="project__year">2026</span>
           </div>
         </a>
       </div>
@@ -195,16 +184,43 @@
 
   <hr class="rule">
 
+  <!-- ============ Studio ============ -->
+  <section class="lead" id="studio">
+    <div class="wrap lead__inner" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__idx">02</span> Studio</p>
+      <h2 class="lead__head">
+        Vitrine ist ein unabhängiges Studio aus Widnau —
+        für Unternehmen, die lieber überzeugen als überreden.
+      </h2>
+      <p class="lead__body">
+        Wir gestalten Websites, Marken und digitale Produkte. Nah an den Menschen,
+        die eine Idee tragen — ohne Umwege, ohne Effekthascherei, mit dem Anspruch,
+        dass jedes Detail einen Grund hat.
+      </p>
+      <ul class="facts" aria-label="Studio in Zahlen">
+        <li><span class="facts__k">Gegründet</span><span class="facts__v">2026</span></li>
+        <li><span class="facts__k">Sitz</span><span class="facts__v">Widnau · Schweiz</span></li>
+        <li><span class="facts__k">Fokus</span><span class="facts__v">Web · Marke · Code</span></li>
+        <li><span class="facts__k">Antwort</span><span class="facts__v">Unter 48 Stunden</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="rule">
+
   <!-- ============ Kontakt ============ -->
   <section class="contact" id="contact">
     <div class="wrap contact__inner" data-reveal>
-      <p class="eyebrow"><span class="eyebrow__idx">04</span> Kontakt</p>
+      <p class="eyebrow"><span class="eyebrow__idx">03</span> Kontakt</p>
       <h2 class="contact__head">Erzählen Sie uns von<br>Ihrem Vorhaben.</h2>
       <p class="contact__body">
-        Ob Markenauftritt, digitales Produkt oder ein Detail, das nicht loslässt —
-        wir hören zu und melden uns innerhalb von zwei Werktagen.
+        Ob neue Website, Markenauftritt oder ein Detail, das nicht loslässt —
+        wir hören zu und melden uns innerhalb von 48 Stunden.
       </p>
-      <a class="contact__mail" href="mailto:hallo@vitrine.studio?subject=Projektanfrage">hallo@vitrine.studio</a>
+      <div class="contact__actions">
+        <a class="btn btn--lime" href="mailto:cedric.business@gmail.com?subject=Projektanfrage">Kontakt aufnehmen <span aria-hidden="true">→</span></a>
+        <a class="contact__mail" href="mailto:cedric.business@gmail.com?subject=Projektanfrage">cedric.business@gmail.com</a>
+      </div>
     </div>
   </section>
 
@@ -216,10 +232,10 @@
       <span class="brand__mark" aria-hidden="true"></span>
       <span>Vitrine</span>
     </div>
-    <p class="foot__note">Designstudio aus Berlin — Marken, Produkte, Oberflächen.</p>
+    <p class="foot__note">Webdesign-Studio aus Widnau, Schweiz — Websites, Marken, Produkte.</p>
     <ul class="foot__links">
+      <li><a href="#leistungen">Leistungen</a></li>
       <li><a href="#work">Arbeiten</a></li>
-      <li><a href="#approach">Ansatz</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
     <span class="foot__copy">© 2026 Vitrine Studio</span>
