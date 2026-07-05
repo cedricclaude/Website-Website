@@ -274,6 +274,7 @@ section{scroll-margin-top:80px}
 .lead__inner{max-width:940px}
 .lead__head{font-size:clamp(30px,5vw,58px);font-weight:800;margin:26px 0 30px;max-width:22ch}
 .lead__body{color:var(--mut);font-size:clamp(16px,1.6vw,19px);max-width:60ch}
+.lead__body strong{color:var(--fg);font-weight:600}
 
 .facts{
   list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
