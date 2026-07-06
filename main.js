@@ -1,5 +1,5 @@
 /* ============================================================
-   Vitrine — Interaktion (v3)
+   Ostform — Interaktion (v3)
    1. Nav-Zustand
    2. Scroll-Reveals
    3. Hero: Ambient-Loop + Maus-Tilt auf dem 3D-Objekt
